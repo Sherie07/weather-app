@@ -5,7 +5,7 @@ function Weather() {
   const [temp, setTemp] = useState("");
   const [error, setError] = useState("");
 
-  const API_KEY = "bcca9cf1fda9b7be14a59468d858c91b";
+  const API_KEY = process.env.REACT_APP_OPENWEATHER_API_KEY;
 
   const getWeather = () => {
     if (!city) return;
